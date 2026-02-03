@@ -1,7 +1,8 @@
 import express from 'express';
 import notesRoutes from './src/routes/notesRoutes.js';
+import dotenv from 'dotenv';
 import {connectDB} from './src/config/db.js';
-
+dotenv.config();
 connectDB();
 const app=express();
 

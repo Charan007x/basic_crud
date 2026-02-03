@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const connectDB = async ()=>{
     try{
-        await mongoose.connect('mongodb+srv://24r21a0588_db_user:123@learning.xpeeejm.mongodb.net/myapp?appName=Learning')
+        await mongoose.connect(process.env.MONGO_URI);
         console.log('Database connected successfully');
     }catch(err){
         console.error('Database connection error:', err);
