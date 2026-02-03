@@ -1,5 +1,5 @@
-const express = require('express');
-const notesRoutes =require ('./src/routes/notesRoutes.js');
+import express from 'express';
+import notesRoutes from './src/routes/notesRoutes.js';
 const app=express();
 
 app.use('/api/notes', notesRoutes);
