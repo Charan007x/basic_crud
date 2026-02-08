@@ -1,5 +1,5 @@
 const fakeauthStatus = (req, res, next)=>{
-    let authstatus =false;
+    let authstatus =true;
     if(authstatus){
         res.status(200).json({auth:true,message:'Authentication successful'});
         next();
